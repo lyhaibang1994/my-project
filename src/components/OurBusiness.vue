@@ -29,7 +29,7 @@
             <div id="headerContent">
                 <div id="logoContainer">
                   <img src="@/assets/img/logo.png" alt="Logo ELEMENT Group">
-                  <h1>ELEMENT</h1>
+                  <h1>BUSINESS</h1>
                 </div>
                 <!-- <h2>International energy trading arm of the ELEMENT Group.<br>Actively trading liquid energy like crude oil, refined oil products, and LNG as well as dry-bulk energy commodities</h2> -->
                 <h2>Create efficient solutions for your value chain</h2>

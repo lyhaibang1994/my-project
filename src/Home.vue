@@ -29,7 +29,7 @@
             <div id="headerContent">
                 <div id="logoContainer">
                   <img src="@/assets/img/logo.png" alt="Logo ELEMENT Group">
-                  <h1>ELEMENT</h1>
+                  <h1>VIETHAUS</h1>
                 </div>
                 <!-- <h2>International energy trading arm of the ELEMENT Group.<br>Actively trading liquid energy like crude oil, refined oil products, and LNG as well as dry-bulk energy commodities</h2> -->
                 <h2>We connect our suppliers and customers in value-adding partnerships for higher qualitya and greener products</h2>
@@ -52,7 +52,7 @@
         </div>
         <div class="row">
           <div class="col s12 l12">
-            <a class="linkBtn" href="ourbusiness">OUR BUSINESS</a>
+            <a class="linkBtn page-scroll" @click.prevent="$router.push({ name: 'ourbusiness'})">OUR BUSINESS</a>
           </div>
         </div>
       </div>
@@ -77,6 +77,44 @@
     </section>
     <section id="ourValues">
       <div class="container">
+        <!-- <div class="card-deck row">
+          <div class="col l4 s12">
+              <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;teams&quot;,&quot;link&quot;:&quot;/search-teamcategory&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/36/images/Teams_3_copy.jpg?1540850190&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/37/images/Team-square.jpg?1540850211&quot;}">
+                <a data-reactroot="" class="card rounded d-sm-block" id="teams" href="/search-teamcategory" data-track="explore opportunities teams card" data-category="Homepage opportunities card" data-action="Teams">
+                    <div class="card-body d-sm-inline-block">
+                      <h3 class="card-title">Teams</h3>
+                      <p class="card-text">Get to know Amazon's teams, from Amazon Web Services to subsidiaries.</p>
+                      <span class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">See all teams</span>
+                    </div>
+                    <div class="card-footer d-block d-sm-none d-lg-block"><span class="fake-link">See all teams</span></div>
+                </a>
+              </div>
+          </div>
+          <div class="col l4 s12">
+              <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;business_categories&quot;,&quot;link&quot;:&quot;/search-jobcategory&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/34/images/Job_Categories-s.jpg?1540850104&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/35/images/Job_Categories-square.jpg?1540850129&quot;}">
+                <a data-reactroot="" class="card rounded d-sm-block" id="business_categories" href="/search-jobcategory" data-track="explore opportunities business_categories card" data-category="Homepage opportunities card" data-action="Job Categories">
+                    <div class="card-body d-sm-inline-block">
+                      <h3 class="card-title">Job Categories</h3>
+                      <p class="card-text">Want to be an Amazonian? Find the right job for you.</p>
+                      <span class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">See all job categories</span>
+                    </div>
+                    <div class="card-footer d-block d-sm-none d-lg-block"><span class="fake-link">See all job categories</span></div>
+                </a>
+              </div>
+          </div>
+          <div class="col l4 s12">
+              <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;locations&quot;,&quot;link&quot;:&quot;/locations&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/32/images/Location_copy.jpg?1540849565&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/33/images/Location-square.jpg?1540849601&quot;}">
+                <a data-reactroot="" class="card rounded d-sm-block" id="locations" href="/locations" data-track="explore opportunities locations card" data-category="Homepage opportunities card" data-action="Locations">
+                    <div class="card-body d-sm-inline-block">
+                      <h3 class="card-title">Locations</h3>
+                      <p class="card-text">View Amazon's office locations across the globe.</p>
+                      <span class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">See all locations</span>
+                    </div>
+                    <div class="card-footer d-block d-sm-none d-lg-block"><span class="fake-link">See all locations</span></div>
+                </a>
+              </div>
+          </div>
+        </div> -->
         <div class="row">
           <div class="col s12 l12">
             <h4 class="center-align">OUR VALUE</h4>
