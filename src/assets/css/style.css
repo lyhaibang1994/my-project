@@ -608,3 +608,7 @@ textarea.materialize-textarea{
 
 	margin-top: 5.9em;
 }
+
+.page-scroll {
+    cursor: pointer;
+}
