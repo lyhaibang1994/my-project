@@ -2,32 +2,7 @@
   <div id="app">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <div class="bodyBg bgAbout"></div>
-    <nav role="navigation">
-      <div class="nav-wrapper container">
-        <!-- <a class="page-scroll" >
-          <img class="logoNav" src="@/assets/img/logo-element-alpha.svg" alt="Logo ELEMENT Americas">
-        </a> -->
-        <ul class="right hide-on-med-and-down">
-          <li><a class="page-scroll active">Home</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourbusiness'})">Our Business</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproduct'})">Our Product</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproductdetail'})">Our Product Detail</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'newinsight'})">News & Insights</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'contact'})">Contact Us</a></li>
-          <!-- <li><a class="page-scroll" href="news.html">News</a></li> -->
-        </ul>
-        <button id="btnNavMobile"><i class="fas fa-bars"></i></button>
-        <div class="modalNav" style="display: none;"><div class="modalOverlay"></div><div class="navContent" style="margin-top: 234.25px;">
-          <li><a class="page-scroll active">Home</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourbusiness'})">Our Business</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproduct'})">Our Product</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproductdetail'})">Our Product Detail</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'newinsight'})">News & Insights</a></li>
-          <li><a class="page-scroll" @click.prevent="$router.push({ name: 'contact'})">Contact Us</a></li>
-          <!-- <li><a class="page-scroll" href="news.html">News</a></li> -->
-        </div></div>
-      </div>
-    </nav>
+    <navigation></navigation>
     <div class="para3" id="para3">
       <ul id="scene3" class="scene" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
         <li class="layer" data-depth="1.6" style="transform: translate3d(-216.172px, 126.651px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"> <svg width="1355px" height="1536px"> <polygon points="64,0 780,1291 369,0" style="stroke:none;fill:rgba(0,0,0,0.5)"></polygon> </svg> </li>
@@ -53,8 +28,8 @@
           <div class="col s12 l8 offset-l2 center-align">
             <div id="headerContent">
                 <div id="logoContainer">
+                  <img src="@/assets/img/logo.png" alt="Logo ELEMENT Group">
                   <h1>ELEMENT</h1>
-                  <img src="@/assets/img/symbole-element-group.svg" alt="Logo ELEMENT Group">
                 </div>
                 <!-- <h2>International energy trading arm of the ELEMENT Group.<br>Actively trading liquid energy like crude oil, refined oil products, and LNG as well as dry-bulk energy commodities</h2> -->
                 <h2>We connect our suppliers and customers in value-adding partnerships for higher qualitya and greener products</h2>
@@ -180,15 +155,8 @@ export default {
 <script type="text/javascript" src="assets/js/parallax.js"></script>
 <script src="assets/js/init.js"></script>
 <script type="text/javascript"></script>
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
