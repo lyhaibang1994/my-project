@@ -14,8 +14,8 @@
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'contact'}">Contact Us</router-link></li>
           <!-- <li><router-link class="page-scroll" href="news.html">News</router-link></li> -->
         </ul>
-        <button id="btnNavMobile"><i class="fas fa-bars"></i></button>
-        <div class="modalNav" style="display: none;"><div class="modalOverlay"></div><div class="navContent" style="margin-top: 234.25px;">
+        <button id="btnNavMobile" @click="openModal"><i class="fa fa-bars"></i></button>
+        <div class="modalNav" id="modalNav" @click="hideModal"><div class="modalOverlay"></div><div class="navContent">
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">Home</router-link></li>
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourbusiness'}">Our Business</router-link></li>
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproduct'}">Our Product</router-link></li>
@@ -29,7 +29,15 @@
 </template>
 <script>
 export default {
-  name: "Navigation"
+  name: "Navigation",
+  methods: {
+    openModal() {
+      document.getElementById("modalNav").style.display = "block";
+    },
+    hideModal() {
+      document.getElementById("modalNav").style.display = "none";
+    }
+  }
 }
 </script>
 
@@ -43,5 +51,8 @@ export default {
 }
 .right {
   float: right;
+}
+.modalNav {
+display: none;
 }
 </style>
