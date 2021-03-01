@@ -185,7 +185,7 @@
             </ul>
           </div>
           <div class="col l3 s12">
-            <h5>Logo</h5>
+              <img class="logoFooter" src="@/assets/img/logo.png" alt="Logo ELEMENT Group">
           </div>
         </div>
       </div>

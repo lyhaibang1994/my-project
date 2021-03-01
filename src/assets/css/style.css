@@ -438,8 +438,9 @@ footer a{
 }
 .logoFooter {
     margin-bottom: 15px;
-    max-width: 190px;
-    margin-top: 4px;
+    max-width: 100px;
+    margin-top: 12px;
+    margin-left: 30px;
     filter: grayscale(100);
     display: block;
 }
