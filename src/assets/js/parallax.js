@@ -36,7 +36,7 @@
  *              driving the motion from the gyroscope output of a smartdevice.
  *              If no gyroscope is available, the cursor position is used.
  */
-;(function(window, document, undefined) {
+(function(window, document) {
 
   // Strict Mode
   'use strict';
@@ -534,7 +534,7 @@
  * @author Paul Irish
  * @see https://gist.github.com/paulirish/1579671
  */
-;(function() {
+(function() {
 
   var lastTime = 0;
   var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -545,7 +545,7 @@
   }
 
   if (!window.requestAnimationFrame) {
-    window.requestAnimationFrame = function(callback, element) {
+    window.requestAnimationFrame = function(callback) {
       var currTime = new Date().getTime();
       var timeToCall = Math.max(0, 16 - (currTime - lastTime));
       var id = window.setTimeout(function() { callback(currTime + timeToCall); },

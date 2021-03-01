@@ -4,8 +4,10 @@
       <div class="nav-wrapper container">
         <a class="page-scroll">
           <img class="logoNav" src="@/assets/img/logo.png" alt="Logo ELEMENT Americas">
+          <img class="logoNav" src="@/assets/img/pg-name.png" alt="Logo Name">
+          <div class="slogan-header">Poin to the Quintessence</div>
         </a>
-        <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down" style="z-index: 10">
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">Home</router-link></li>
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourbusiness'}">Our Business</router-link></li>
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproduct'}">Our Product</router-link></li>
@@ -47,12 +49,19 @@ export default {
 .logoNav {
   float: left;
   height: 47px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 .right {
   float: right;
 }
 .modalNav {
 display: none;
+}
+.slogan-header {
+  position: absolute;
+  top: 20px;
+  color: black !important;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 </style>
