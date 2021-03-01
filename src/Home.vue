@@ -75,52 +75,68 @@
         </div>
       </div>
     </section>
+    <div class="split">
+      <div class="mask"></div>
+      <img src="@/assets/img/split-top.png" alt="deco banner" class="splitTop">
+      <img src="@/assets/img/split-bottom.png" alt="deco banner" class="splitBottom">
+    </div>
     <section id="ourValues">
       <div class="container">
-        <!-- <div class="card-deck row">
-          <div class="col l4 s12">
-              <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;teams&quot;,&quot;link&quot;:&quot;/search-teamcategory&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/36/images/Teams_3_copy.jpg?1540850190&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/37/images/Team-square.jpg?1540850211&quot;}">
-                <a data-reactroot="" class="card rounded d-sm-block" id="teams" href="/search-teamcategory" data-track="explore opportunities teams card" data-category="Homepage opportunities card" data-action="Teams">
-                    <div class="card-body d-sm-inline-block">
-                      <h3 class="card-title">Teams</h3>
-                      <p class="card-text">Get to know Amazon's teams, from Amazon Web Services to subsidiaries.</p>
-                      <span class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">See all teams</span>
-                    </div>
-                    <div class="card-footer d-block d-sm-none d-lg-block"><span class="fake-link">See all teams</span></div>
-                </a>
-              </div>
-          </div>
-          <div class="col l4 s12">
-              <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;business_categories&quot;,&quot;link&quot;:&quot;/search-jobcategory&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/34/images/Job_Categories-s.jpg?1540850104&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/35/images/Job_Categories-square.jpg?1540850129&quot;}">
-                <a data-reactroot="" class="card rounded d-sm-block" id="business_categories" href="/search-jobcategory" data-track="explore opportunities business_categories card" data-category="Homepage opportunities card" data-action="Job Categories">
-                    <div class="card-body d-sm-inline-block">
-                      <h3 class="card-title">Job Categories</h3>
-                      <p class="card-text">Want to be an Amazonian? Find the right job for you.</p>
-                      <span class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">See all job categories</span>
-                    </div>
-                    <div class="card-footer d-block d-sm-none d-lg-block"><span class="fake-link">See all job categories</span></div>
-                </a>
-              </div>
-          </div>
-          <div class="col l4 s12">
-              <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;locations&quot;,&quot;link&quot;:&quot;/locations&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/32/images/Location_copy.jpg?1540849565&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/33/images/Location-square.jpg?1540849601&quot;}">
-                <a data-reactroot="" class="card rounded d-sm-block" id="locations" href="/locations" data-track="explore opportunities locations card" data-category="Homepage opportunities card" data-action="Locations">
-                    <div class="card-body d-sm-inline-block">
-                      <h3 class="card-title">Locations</h3>
-                      <p class="card-text">View Amazon's office locations across the globe.</p>
-                      <span class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">See all locations</span>
-                    </div>
-                    <div class="card-footer d-block d-sm-none d-lg-block"><span class="fake-link">See all locations</span></div>
-                </a>
-              </div>
-          </div>
-        </div> -->
         <div class="row">
           <div class="col s12 l12">
             <h4 class="center-align">OUR VALUE</h4>
             <p class="center-align center-block">Our values are at the heart of everything we do, expressing our shared beliefs, behaviors and aspirations as a company</p>
             <hr class="hrTitle">
-            <div class="row">
+            <div class="card-deck row">
+              <div class="col l4 s12">
+                  <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;teams&quot;,&quot;link&quot;:&quot;/search-teamcategory&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/36/images/Teams_3_copy.jpg?1540850190&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/37/images/Team-square.jpg?1540850211&quot;}">
+                    <a data-reactroot="" class="card rounded d-sm-block" id="teams" data-track="explore opportunities teams card" data-category="Homepage opportunities card" data-action="Teams">
+                        <img class="card-img-top rounded-top top-image d-sm-none d-lg-block" src="@/assets/img/shutterstock.jpg" role="presentation" aria-hidden="true" alt="">
+                        <div class="card-body d-sm-inline-block">
+                          <h3 class="card-title">We are committed</h3>
+                          <p class="card-text">We are committed to our customers, placing them at the center of everything we do.
+                          </p>
+                          <p class="card-text">We are committed to our people, investing in them as our most important asset.
+                          </p>
+                          <p class="card-text">We are committed to our partners, working alongside them to reap the collective rewards of responsible business.
+                          </p>
+                          <span style="cursor: pointer;" class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">Read more</span>
+                        </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col l4 s12">
+                  <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;business_categories&quot;,&quot;link&quot;:&quot;/search-jobcategory&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/34/images/Job_Categories-s.jpg?1540850104&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/35/images/Job_Categories-square.jpg?1540850129&quot;}">
+                    <a data-reactroot="" class="card rounded d-sm-block" id="business_categories" data-track="explore opportunities business_categories card" data-category="Homepage opportunities card" data-action="Job Categories">
+                        <img class="card-img-top rounded-top top-image d-sm-none d-lg-block" src="@/assets/img/family.jpg" role="presentation" aria-hidden="true" alt="">
+                        <div class="card-body d-sm-inline-block">
+                          <h3 class="card-title">We are family</h3>
+                          <p class="card-text">Trust and integrity are the cores of our long-lasting relationships and is essential in fostering loyalty and teamwork.						
+                          </p>
+                          <p class="card-text">We care about our people, our customers, suppliers and communities and about creating a sustainable future together.						
+                          </p>
+                          <span style="cursor: pointer;" class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">Read more</span>
+                        </div>
+                    </a>
+                  </div>
+              </div>
+              <div class="col l4 s12">
+                  <div data-react-class="OpportunitiesCard" data-react-props="{&quot;name&quot;:&quot;locations&quot;,&quot;link&quot;:&quot;/locations&quot;,&quot;image&quot;:&quot;https://static.amazon.jobs/global_images/32/images/Location_copy.jpg?1540849565&quot;,&quot;image_square&quot;:&quot;https://static.amazon.jobs/global_images/33/images/Location-square.jpg?1540849601&quot;}">
+                    <a data-reactroot="" class="card rounded d-sm-block" id="locations" data-track="explore opportunities locations card" data-category="Homepage opportunities card" data-action="Locations">
+                        <img class="card-img-top rounded-top top-image d-sm-none d-lg-block" src="@/assets/img/getty.jpg" role="presentation" aria-hidden="true" alt="">
+                        <div class="card-body d-sm-inline-block">
+                          <h3 class="card-title">We are entrepreneurs</h3>
+                          <p class="card-text">Our growth and success are driven by our entrepreneurial spirit.
+                          </p>
+                          <p class="card-text">We empower our people to create and innovate as we build toward the future, balancing individual initiative with informed, measured judgement and controlled decision-making.
+                          </p>
+                          <span style="cursor: pointer;" class="fake-link card-body-fake-link d-none d-sm-block d-lg-none">Read more</span>
+                        </div>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            <!-- <div class="row">
               <div class="col l3 offset-l2 s12">
                 <p>We are committed</p>
               </div>
@@ -142,7 +158,7 @@
               <div class="col l4 s12">
                 <p class="center-align center-block">Our growth and success are driven by our entrepreneurial spirit. We empower our people to create and innovate as we build toward the future, balancing individual initiative with informed, measured judgement and controlled decision-making.</p>
               </div>
-            </div>						
+            </div>						 -->
           </div>
         </div>
       </div>
