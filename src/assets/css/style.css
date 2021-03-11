@@ -127,7 +127,7 @@ section{
 
 #logoContainer{
     font-size: 42px;
-    min-width: 400px;
+    white-space: nowrap;
 }
 #logoContainer h1 {
 	text-align: left;
@@ -326,7 +326,7 @@ header.smallheader{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,.85);
+    background-color: rgba(255,255,255,.75);
     background-image: url(../img/pattern.png)
 }
 #logoElement{
@@ -657,4 +657,31 @@ textarea.materialize-textarea{
         margin-bottom:0;
         margin-left:15px
     }
+}
+.activity-text {
+    display: block;
+    color: #35353d;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ourValues .card-deck {
+    display: flex;
+}
+#ourValues .card-our-value {
+    flex: 1;
+    height: 100% !important;
+    text-align: left;
+}
+#ourValues .card-our-value > a {
+    height: 100% !important;
+}
+#ourValues .card-our-value > a > div {
+   padding: 8px;
+}
+#ourValues img {
+    width: 100%;
+    /* height: 100%; width: 100%; object-fit: contain */
 }

@@ -25,26 +25,26 @@
     <footer id="contact" class="page-footer">
       <div class="container">
         <div class="row">        
-          <div class="col l3 offset-l2 s12">
+          <div class="col">
             <h5>Address</h5>
             <address>
               <p>VIET HAUS LTD.<br>A5.08 Sky Center<br>10 Pho Quang, Ward 2<br>Tan Binh District, Ho Chi Minh City, Vietnam.</p>
-              <p>(+84) 28 2243 6679<br><a href="info@viet-haus.com">info@viet-haus.com</a></p>
+              <p>(+84) 8627 39408<br><a href="info@viet-haus.com">info@viet-haus.com</a></p>
             </address>
           </div>
-          <div class="col l2 s12">
+          <div class="col">
             <h5>Links</h5>
             <ul>
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'home'})">Home</a></li>
+              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'home'})">About Us</a></li>
               <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourbusiness'})">Our Business</a></li>
               <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproduct'})">Our Product</a></li>
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproductdetail'})">Our Product Detail</a></li>
+              <!-- <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproductdetail'})">Our Product Detail</a></li> -->
               <li><a class="page-scroll" @click.prevent="$router.push({ name: 'newinsight'})">News & Insights</a></li>
               <li><a class="page-scroll" @click.prevent="$router.push({ name: 'contact'})">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col l3 s12">
-            <h5>Logo</h5>
+          <div class="col">
+            <!-- <h5>Logo</h5> -->
             <ImgLogo></ImgLogo>
           </div>
         </div>
@@ -72,3 +72,13 @@ export default {
 
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
+<style scoped>
+.page-footer > .container > .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.page-footer > .container > .row > .col {
+  flex: 1 0 0% !important;
+}
+</style>
