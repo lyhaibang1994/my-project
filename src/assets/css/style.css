@@ -145,10 +145,10 @@ section{
     letter-spacing: 0.5em;
     margin-left: 0.25%;
 }
-#logoContainer img{
+/* #logoContainer img{
     max-width: 2em;
     margin-left: -0.25em;
-}
+} */
 
 .containerHeader {
     width: 100%;

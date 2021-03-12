@@ -29,7 +29,13 @@
             <h5>Address</h5>
             <address>
               <p>VIET HAUS LTD.<br>A5.08 Sky Center<br>10 Pho Quang, Ward 2<br>Tan Binh District, Ho Chi Minh City, Vietnam.</p>
-              <p>(+84) 8627 39408<br><a href="info@viet-haus.com">info@viet-haus.com</a></p>
+              <p>(+84) 8627 39408<br>For inquiries, please contact:<br>
+                        Ngan Nguyen (Ms.)
+                        <a href="tel:+84 9 0307 1408">(+84) 9 0307 1408</a>
+                        <br>
+                    <a href="ngan@viet-haus.com">
+                        ngan@viet-haus.com
+                    </a></p>
             </address>
           </div>
           <div class="col">
@@ -45,7 +51,7 @@
           </div>
           <div class="col">
             <!-- <h5>Logo</h5> -->
-            <ImgLogo></ImgLogo>
+            <ImgLogo width=200 style="margin-top: 20px"></ImgLogo>
           </div>
         </div>
       </div>

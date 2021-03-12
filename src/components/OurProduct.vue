@@ -11,10 +11,8 @@
               </div>
               <!-- <h2>International energy trading arm of the ELEMENT Group.<br>Actively trading liquid energy like crude oil, refined oil products, and LNG as well as dry-bulk energy commodities</h2> -->
               <h2>
-                We focus on speciality ingredients and processed products and
-                organised and simplified our businesses into 4 <br />
-                operating groups, each with a clear focus and benefits for our
-                customers, communities and our business.
+                We organised and simplified our businesses into 4
+                operating groups, each with a clear focus and benefits for our customers, communities and our business.
               </h2>
             </div>
           </div>

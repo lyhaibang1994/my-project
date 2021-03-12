@@ -1,17 +1,20 @@
 <template>
   <div id="logoContainer">
-    <img src="@/assets/img/logo.png" alt="Logo ELEMENT Group" />
-    <img src="@/assets/img/pg-name.png" class="logo-name" alt="Logo ELEMENT" />
-    <div class="slogan-header">Poin to the Quintessence</div>
+    <img src="@/assets/img/viethaus_transparent.png" :width="width" alt="Logo ELEMENT Group" />
+    <!-- <img src="@/assets/img/pg-name.png" class="logo-name" alt="Logo ELEMENT" />
+    <div class="slogan-header">Poin to the Quintessence</div> -->
   </div>
 </template>
+<script>
+export default {
+  props: {
+    width: {
+      default: 300
+    }
+  }
+}
+</script>
 <style scoped>
-#logoContainer {
-  margin-bottom: 15px;
-}
-#logoContainer img{
-  max-width: 2.5em !important;
-}
 .logo-name {
     margin-left: 15px !important;
     height: 85px;

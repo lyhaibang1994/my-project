@@ -34,11 +34,9 @@
       <div class="container">
         <div class="row">
           <div class="col s12 l12">
-            <h4 class="center-align">Viet Haus was selected LIGHT HOUSE PROJECT</h4>
+            <h4 class="center-align">VIET HAUS WAS SELECTED TO JOIN THE  LIGHT HOUSE PROJECT</h4>
             <hr class="hrTitle">
-            <p class="center-align center-block">So grateful that Viet Haus was selected to join Light House Project, organized by The Friedrich Naumann Foundation for Freedom (FNF).
-              The workshop is on EVFTA with FNF Country Director and Eurocham Director and consulting on the approach to EU
-              market.
+            <p class="center-align center-block">We are happy to inform that Viet Haus was selected to join the Light House Project, organized by The Friedrich Naumann Foundation for Freedom (FNF). The workshop is on EVFTA with FNF Country Director and Eurocham Director and consulting on the approach to EU market.
             </p>
             <br>
             <img src="@/assets/img/img-news.png">
@@ -66,3 +64,10 @@ export default {
 <script type="text/javascript"></script>
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
+<style scoped>
+@media(max-width: 550px) {
+  img {
+    width: 100%;
+  }
+}
+</style>

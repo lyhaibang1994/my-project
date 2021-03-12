@@ -13,11 +13,10 @@
               <h2>Create efficient solutions for your value chain</h2>
               <hr class="hrTitle" />
               <p class="center-align center-block">
-                We responsibly source, transform and deliver in the Specialty
-                Ingredients by supplying innovative solutions that promote
-                health, wellness, beauty, nutrition, hygiene and environmental
-                protection. We have four pillars : Animal Feed, Bioenergy,
-                Consumer Care, Food and Beverage.
+                We responsibly source, transform and deliver in specialty
+                ingredients, production materials, processed products by supplying
+                by innovative solutions that promote your health, beauty, nutrition, hygiene 
+                and environment protection.
               </p>
             </div>
           </div>
@@ -38,11 +37,9 @@
             <h4 class="center-align">SALES & REPRESENTATION</h4>
             <hr class="hrTitle" />
             <p class="center-align center-block">
-              You have the products; we have the contacts to commercialise them
-              rapidly throughout the country. Let us show you how our sales team
-              will allow you to shine on the Vietnamese market. Since our
-              beginnings, we have established long-lasting relations with
-              business partners and we are proud to let you benefit from those.
+              You have the products; we have the contacts to commercialise them rapidly throughout the country.
+               Let us show you how our sales team will allow you to develop on the Vietnamese market. Since our beginnings, 
+               we have established long-lasting relations with business partners and we are proud to let you benefit from those.
             </p>
           </div>
         </div>
@@ -88,11 +85,16 @@
             <h4 class="center-align">PLANTATION MANAGEMENT</h4>
             <hr class="hrTitle" />
             <p class="center-align center-block">
-              We organize plant area for raw materials and products by
-              partnering with cooperatives to set up and manage plantation and
-              processing products. We construct a material area to meet the
-              client's standards and to fullfil the criteria of required
-              certificatations.
+              We organize plant areas for raw materials and products by partnering with cooperatives to set up and manage plantation and processing products. We construct a material area to meet the client's standards and to fullfil the criteria of required certificatations. 
+<br>
+Some references:
+<br>
+- Set up and manage organic cashew farms
+<br>
+- Set up and manage short term fruits or veggies
+<br>
+- Set up and manage phamarceutical herbs for your production 
+...
             </p>
           </div>
         </div>
@@ -113,3 +115,18 @@ export default {
 <script type="text/javascript"></script>
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
+<style scoped>
+.containerHeader .row > div {
+  margin-left: 0px !important;
+}
+#headerContent {
+  min-width: 720px !important;
+}
+@media(max-width:745px){
+.containerHeader .row > div > #headerContent {
+min-width: 0px !important;
+}
+}
+
+
+</style>

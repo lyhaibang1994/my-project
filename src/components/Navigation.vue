@@ -3,9 +3,9 @@
     <nav role="navigation" class="nav-header">
       <div class="nav-wrapper container">
         <a class="page-scroll">
-          <img class="logoNav" src="@/assets/img/logo.png" alt="Logo ELEMENT Americas">
-          <img class="logoNav" src="@/assets/img/pg-name.png" alt="Logo Name">
-          <div class="slogan-header">Poin to the Quintessence</div>
+          <img class="logoNav" src="@/assets/img/viethaus_transparent.png" alt="Logo ELEMENT Americas">
+          <!-- <img class="logoNav" src="@/assets/img/pg-name.png" alt="Logo Name"> -->
+          <!-- <div class="slogan-header">Poin to the Quintessence</div> -->
         </a>
         <ul class="right hide-on-med-and-down" style="z-index: 10">
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">About Us</router-link></li>
@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .logoNav {
   float: left;
-  height: 47px;
+  height: 95%;
   margin-top: 0px;
 }
 .right {
