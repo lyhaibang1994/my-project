@@ -33,7 +33,7 @@
                         Ngan Nguyen (Ms.)
                         <a href="tel:+84 9 0307 1408">(+84) 9 0307 1408</a>
                         <br>
-                    <a href="ngan@viet-haus.com">
+                    <a href="mailto:ngan@viet-haus.com">
                         ngan@viet-haus.com
                     </a></p>
             </address>
