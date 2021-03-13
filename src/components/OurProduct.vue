@@ -32,15 +32,34 @@
           <div class="col s12 l12">
             <h4 class="center-align">ANIMAL FEED</h4>
             <hr class="hrTitle" />
-            <p class="center-align center-block">
-              Sales Representation and export are two of our key activities in
-              animal feed industry.
-            </p>
-            <p class="center-align center-block">
-              Our long experience permits VIET HAUS to be as close to the supply
-              chain, markets, trends and regulations as possible. We are not
-              only service provider but also solution provider for you.
-            </p>
+            <div class="center-align center-block row-wrap">
+              <div class="col">
+                <p class="col-title">Animal Protein</p>
+                <p class="col-content">Meat bone Meal
+                  <br>
+                  Blood Meal
+                  <br>
+                  Poultry Meal
+                  <br>
+                  Feather Meal
+                  <br>
+                  Fish Meal
+                  <br>
+                  Hemoglobin
+                  <br>
+                  Plasma
+                </p>
+                </div>
+              <div class="col">
+                <p class="col-title">Plant Protein</p>
+                <p class="col-content">
+                  DDSG<br>
+                  Cotton Seed<br>
+                  Sun Flower Meal<br>
+                  Fermented Soybean Meal
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -61,25 +80,11 @@
               sourcing agent or collector, to secure offers with genuine oils
               and fats quality.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="consumercare">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 l12">
-            <h4 class="center-align">CONSUMER CARE</h4>
-            <hr class="hrTitle" />
-            <p class="center-align center-block">
-              Our business is a global trader in several important chemical
-              ingredient categories and materials that provide health, wellness,
-              beauty and protection claims for our fast-moving consumer goods
-              customers. These ubiquitous materials include cosmetic
-              ingredients, Omega 3-6-9 oils and microbial-control solutions,
-              such as disinfectants and sanitizers that help protect us from
-              dangerous and unwanted microbes.
-            </p>
+             <div class="center-align center-block row-wrap">
+              <div class="col"><p class="col-title">. Used Cooking Oil</p></div>
+              <div class="col"><p class="col-title">. Cashew Nut Shell Liquid</p></div>
+              <div class="col"><p class="col-title">. Animal Fat</p></div>
+             </div>
           </div>
         </div>
       </div>
@@ -93,6 +98,29 @@
             <p class="center-align center-block">
               We provide food and beverage ingredients and processed products to
               manufacturers and importers in the food and beverage industry.
+            </p>
+             <div class="center-align center-block row-wrap">
+              <div class="col"><p class="col-title">. Organic ingredients</p></div>
+              <div class="col"><p class="col-title">. Eco-friendly straws</p></div>
+             </div>
+             <div class="center-align center-block row-wrap">
+              <div class="col"><p class="col-title">. Natural Fruits & Veggies</p></div>
+              <div class="col"><p class="col-title">. Edible Oils</p></div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="consumercare">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l12">
+            <h4 class="center-align">CONSUMER CARE</h4>
+            <hr class="hrTitle" />
+            <p class="center-align center-block">
+              We trade several important chemical ingredient categories and materials that provide health, 
+              wellness, beauty and protection claims for our fast-moving consumer goods customers.
+              These materials include cosmetic ingredients, Omega 3-6-9 oils and materials for disinfectional production.
             </p>
           </div>
         </div>
@@ -130,5 +158,35 @@ export default {
 <style scoped>
 header h2 {
   max-width: initial !important;
+}
+.row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row-wrap .col {
+  flex: 1 0 0%;
+}
+ .col .col-title {
+  position: relative;
+  padding: 5px;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+#animalfeed .col .col-title,
+#foodbeverages .col .col-title {
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+.col-content {
+  border: 1px solid black;
+  background: white;
+  padding: 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 100%;
+  text-align: left;
 }
 </style>
