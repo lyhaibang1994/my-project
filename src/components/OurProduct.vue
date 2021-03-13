@@ -176,17 +176,17 @@ header h2 {
 }
 #animalfeed .col .col-title,
 #foodbeverages .col .col-title {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
 
 }
 .col-content {
   border: 1px solid black;
   background: white;
   padding: 5px;
-  margin-left: 25%;
-  margin-right: 25%;
-  height: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 80%;
   text-align: left;
 }
 </style>
