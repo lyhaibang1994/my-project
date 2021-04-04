@@ -715,7 +715,7 @@ header > img {
 }
 @media (max-width: 960px) {
     .row > .col {
-        flex: 1 0 50% !important;
+        flex: 1 0 100% !important;
     }
 }
 .img-text-header {

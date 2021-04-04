@@ -30,11 +30,12 @@
           <div class="col col-text">
             <p class="home-title" style="color: #000">Office Address</p>
             <address>
-              <p>Viet Haus Ltd.<br>A5.08 Sky Center<br>5B Pho Quang, Ward 2<br>Tan Binh District, HCMC, Vietnam.</p>
-              <br>
-              <a href="mailto:vh@viet-haus.com">
-                  vh@viet-haus.com
-              </a>
+              <span>Viet Haus Ltd.<br>A5.08 Sky Center<br>5B Pho Quang, Ward 2<br>Tan Binh District, HCMC, Vietnam.</span>
+              <p>
+                <a href="mailto:vh@viet-haus.com">
+                    vh@viet-haus.com
+                </a>
+              </p>
             </address>
           </div>
         </div>

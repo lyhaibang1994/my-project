@@ -49,10 +49,3 @@ export default {
 
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
-<style scoped>
-@media(max-width: 550px) {
-  img {
-    width: 100%;
-  }
-}
-</style>

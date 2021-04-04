@@ -98,6 +98,7 @@ export default {
 }
 .page-footer {
   background: url("../assets/img/Our-company/Geometric_abstract_grey_background_for_bussines_templates_website_wallpapers.webp");
+  margin-top: 1rem;
 }
 .page-footer .col-image {
   margin: auto;
@@ -107,19 +108,19 @@ export default {
 .hr-contact {
   margin: auto;
   display: block;
-  width: 40%;
+  width: 60%;
 }
 address {
   text-align: left;
   margin: auto;
   display: block;
-  width: 40%;
+  width: 60%;
 }
 .page-footer h5 {
   text-align: left;
   margin: auto;
   display: block;
-  width: 40%;
+  width: 60%;
   margin-bottom: 7px;
 }
 </style>
