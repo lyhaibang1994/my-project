@@ -1,57 +1,30 @@
 <template>
   <div id="app">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <div class="bodyBg bgAbout"></div>
     <navigation></navigation>
-    <div class="para3" id="para3">
-      <ul id="scene3" class="scene" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-        <li class="layer" data-depth="1.6" style="transform: translate3d(-216.172px, 126.651px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"> <svg width="1355px" height="1536px"> <polygon points="64,0 780,1291 369,0" style="stroke:none;fill:rgba(0,0,0,0.5)"></polygon> </svg> </li>
-        <li class="layer" data-depth="1.6" style="transform: translate3d(-216.172px, 126.651px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <svg width="1355px" height="1536px"> <polygon points="397,14 867,1488 1355,637 1355,282 866,820 " style="stroke:none;fill:rgba(0,0,0,0.2)"></polygon> </svg> </li>
-        <li class="layer" data-depth="1.6" style="transform: translate3d(-216.172px, 126.651px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <svg width="1355px" height="1536px"> <polygon points="479,0 780,542 607,0" style="stroke:none;fill:rgba(0,0,0,0.5)"></polygon> </svg> </li><li class="layer" data-depth="1.6" style="transform: translate3d(-216.172px, 126.651px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"> <svg width="1355px" height="1536px"> <polygon points="631,0 867,740 1291,0 932,0 866,72 824,0" style="stroke:none;fill:rgba(0,0,0,0.5)"></polygon> </svg> </li>
-      </ul>
-    </div>
-    <div id="alphaLeft" class="wow fadeInDown" data-wow-delay="1.4s">
-      <ul id="scene5" class="scene5" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-        <li class="layer" data-depth="0.4" style="transform: translate3d(-59.2852px, 25.786px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-          <svg width="1500px" height="1500px">
-            <polygon points="0,0 662,1194 365,260" style="stroke:none;fill:rgba(0,0,0,.2)"></polygon>
-            <polygon points="379,250 727,1340 1494,0 726,845" style="stroke:none;fill:rgba(0,0,0,.3)"></polygon>
-            <polygon points="819,719 1406,72 1081,263" style="stroke:none;fill:rgba(0,0,0,.2)"></polygon>
-          </svg>
-        </li>
-      </ul>
-    </div>
+
     <router-view></router-view>
+    <div class="back-to-top" id="back" @click="goTop()">
+      <span class="icon"></span>
+    </div>
     <footer id="contact" class="page-footer">
       <div class="container">
         <div class="row">        
           <div class="col">
-            <h5>Address</h5>
+            <h5>Contact Us</h5>
+            <hr class="hr-contact">
             <address>
-              <p>VIET HAUS LTD.<br>A5.08 Sky Center<br>10 Pho Quang, Ward 2<br>Tan Binh District, Ho Chi Minh City, Vietnam.</p>
-              <p>(+84) 8627 39408<br>For inquiries, please contact:<br>
-                        Ngan Nguyen (Ms.)
-                        <a href="tel:+84 9 0307 1408">(+84) 9 0307 1408</a>
-                        <br>
-                    <a href="mailto:ngan@viet-haus.com">
-                        ngan@viet-haus.com
-                    </a></p>
+              <p>Viet Haus Ltd.<br>A5.08 Sky Center<br>5B Pho Quang, Ward 2<br>Tan Binh District, HCMC, Vietnam.</p>
+              <a href="tel:+84 28 6273 9408">(+84) 28 6273 9408</a>
+              <br>
+              <a href="mailto:vh@viet-haus.com">
+                  vh@viet-haus.com
+              </a>
             </address>
           </div>
-          <div class="col">
-            <h5>Links</h5>
-            <ul>
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'home'})">About Us</a></li>
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourbusiness'})">Our Business</a></li>
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproduct'})">Our Product</a></li>
-              <!-- <li><a class="page-scroll" @click.prevent="$router.push({ name: 'ourproductdetail'})">Our Product Detail</a></li> -->
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'newinsight'})">News & Insights</a></li>
-              <li><a class="page-scroll" @click.prevent="$router.push({ name: 'contact'})">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col">
+          
+          <div class="col col-image">
             <!-- <h5>Logo</h5> -->
-            <ImgLogo width=200 style="margin-top: 20px"></ImgLogo>
+            <ImgLogo width=200 style="margin-top: 20px; width: 200px;"></ImgLogo>
           </div>
         </div>
       </div>
@@ -66,25 +39,87 @@
 
 <script>
 export default {
-    name: "root"
+    name: "root",
+    mounted() {
+      window.addEventListener("scroll", this.scroll);
+    },
+    destroyed() {
+      window.removeEventListener("scroll", this.scroll);
+    },
+    methods: {
+      scroll() {
+        const scrollToTopButton = document.getElementById('back');
+        const navigation = document.getElementById('navigation');
+
+        let y = window.scrollY;
+        if (y > 100) {
+          scrollToTopButton.style.opacity = '1'
+          navigation.style.opacity = '0'
+        } else {
+          scrollToTopButton.style.opacity = '0'
+          navigation.style.opacity = '1'
+        }
+      },
+      goTop() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+    }
 }
 </script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/materialize.min.js"></script>
-<script type="text/javascript" src="assets/js/parallax.js"></script>
-<script src="assets/js/init.js"></script>
-<script type="text/javascript"></script>
 
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
 <style scoped>
-.page-footer > .container > .row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+.back-to-top {
+  background: rgba(0, 0, 0, .8);
+  position: fixed;
+  left: 1rem;
+  bottom: 2rem;
+  padding-top: .55rem;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  white-space: nowrap;
+  z-index: 1040;
+  text-align: center;
+  transition: opacity 0.5s ease-out;
 }
-.page-footer > .container > .row > .col {
-  flex: 1 0 0% !important;
+.icon {
+  margin-top: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+}
+.page-footer {
+  background: url("../assets/img/Our-company/Geometric_abstract_grey_background_for_bussines_templates_website_wallpapers.webp");
+}
+.page-footer .col-image {
+  margin: auto;
+    display: block;
+    text-align: -webkit-center;
+}
+.hr-contact {
+  margin: auto;
+  display: block;
+  width: 40%;
+}
+address {
+  text-align: left;
+  margin: auto;
+  display: block;
+  width: 40%;
+}
+.page-footer h5 {
+  text-align: left;
+  margin: auto;
+  display: block;
+  width: 40%;
+  margin-bottom: 7px;
 }
 </style>

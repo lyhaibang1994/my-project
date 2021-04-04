@@ -10,6 +10,7 @@ body{
   color: #2c3e50;
   margin-top: 60px;
   margin: -8px;
+  overflow-x: hidden;
 }
 .bodyBg{
     z-index: -1;
@@ -64,7 +65,7 @@ header h2{
     text-transform: initial;
 }
 section{
-    padding: 107px 0;
+    padding: 40px 0;
     background: rgba(255, 255, 255, .94);
 }
 .hrTitle {
@@ -227,6 +228,7 @@ section{
 /* NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV -  */
 #btnNavMobile{
     float: right;
+    margin-right: 20px;
     background: transparent;
     border:none;
     color: 393536;
@@ -238,8 +240,8 @@ section{
     top: 0;
     left: 0;
     width:100vw;
-    height: 100vh;
-    background:rgba(255,255,255,.9);
+    height: 80vh;
+    background:#212529;
     display: none;
 }
 .modalOverlay{
@@ -254,17 +256,19 @@ section{
     top: 0;
 }
 .navContent {
+    padding: 20px;
     position: relative;
     z-index: 999;
-    text-align: center;
+    text-align: left;
+    list-style-type: none;
 }
 .navContent ul{
     list-style-type: none;  
 }
 .navContent li a{
-    color: #111;
+    color: #fff;
     text-transform: uppercase;
-    font-size: 32px;
+    font-weight: bold;
 }
 @media(max-width:960px){
     #btnNavMobile{
@@ -279,19 +283,26 @@ section{
 
 nav{
     position: fixed;
-    background: #fff;
+    padding: 1rem 1rem;
+    background: linear-gradient(to bottom, transparent 0, transparent 1%, rgba(0, 0, 0, .1) 100%);
     z-index: 99;
+    transition: opacity 0.75s ease-in-out;
 }
 .logoNav {
     max-width: 200px;
     margin-top: 12px;
 }
 nav ul a{
-    color: #666;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bolder;
     text-transform: uppercase
 }
 nav ul a.active{
-    color: #00838f;
+    /* color: #00838f; */
+}
+nav li:last-child a {
+    border: none;
 }
 
 /* HEADER HOME - HEADER HOME - HEADER HOME - HEADER HOME - HEADER HOME  */ 
@@ -310,8 +321,8 @@ nav ul a.active{
     }
 }
 header{
-    height: 100vh;
-    min-height: 100vh;
+    height: 80vh;
+    min-height: 80vh;
     position: relative;
 }
 header.smallheader{
@@ -478,8 +489,8 @@ textarea.materialize-textarea{
 }
 /* END FOOTER - END FOOTER - END FOOTER - END FOOTER - END FOOTER - END FOOTER -  */ 
 
-/* ABOUT US / VALUES -  ABOUT US / VALUES -  ABOUT US / VALUES -  ABOUT US / VALUES -  */
-/* ABOUT US / VALUES -  ABOUT US / VALUES -  ABOUT US / VALUES -  ABOUT US / VALUES -  */
+/* Our Company / VALUES -  Our Company / VALUES -  Our Company / VALUES -  Our Company / VALUES -  */
+/* Our Company / VALUES -  Our Company / VALUES -  Our Company / VALUES -  Our Company / VALUES -  */
 
 #values strong,#ourBusiness strong{
     display: block;
@@ -684,4 +695,41 @@ textarea.materialize-textarea{
 #ourValues img {
     width: 100%;
     /* height: 100%; width: 100%; object-fit: contain */
+}
+header > img {
+    width: 100%;
+    height: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.row > .col {
+    flex: 1 0 0% !important;
+    margin-top: 10px;
+}
+.col img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 960px) {
+    .row > .col {
+        flex: 1 0 50% !important;
+    }
+}
+.img-text-header {
+    color: #fff;
+}
+.home-title {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #548235;
+}
+.col-text {
+    display: block;
+    text-align: left;
+    align-self: center;
+    padding: 0 3rem !important;
 }

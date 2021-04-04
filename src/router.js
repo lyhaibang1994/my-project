@@ -17,11 +17,15 @@ const router = new VueRouter({
     {
       path: "/",
       component: () => import("./components/Root.vue"),
+      name: "root",
       children: [
         {
           path: "/home",
           component: () => import("./Home.vue"),
-          name: "home"
+          name: "home",
+          meta: {
+            imgPath: "@/assets/img/Our-company/our-com.jpg"
+          }
         },
         {
           path: "/our-business",

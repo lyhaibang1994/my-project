@@ -1,6 +1,6 @@
 <template>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <nav role="navigation" class="nav-header">
+    <nav role="navigation" id="navigation" class="nav-header">
       <div class="nav-wrapper container">
         <router-link class="page-scroll" :to="{ name: 'home'}">
           <img class="logoNav" src="@/assets/img/viethaus_transparent.png" alt="Logo ELEMENT Americas">
@@ -8,21 +8,22 @@
           <!-- <div class="slogan-header">Poin to the Quintessence</div> -->
         </router-link>
         <ul class="right hide-on-med-and-down" style="z-index: 10">
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">About Us</router-link></li>
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourbusiness'}">Our Business</router-link></li>
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproduct'}">Our Product</router-link></li>
-          <!-- <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproductdetail'}">Our Product Detail</router-link></li> -->
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'newinsight'}">News & Insights</router-link></li>
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">Our Company</router-link></li>
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourbusiness'}">Products</router-link></li>
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproduct'}">SOURCING</router-link></li>
+          <!-- <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproductdetail'}">SOURCING Detail</router-link></li> -->
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'newinsight'}">NEWS</router-link></li>
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'contact'}">Contact Us</router-link></li>
           <!-- <li><router-link class="page-scroll" href="news.html">News</router-link></li> -->
         </ul>
         <button id="btnNavMobile" @click="openModal"><i class="fa fa-bars"></i></button>
-        <div class="modalNav" id="modalNav" @click="hideModal"><div class="modalOverlay"></div><div class="navContent">
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">About Us</router-link></li>
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourbusiness'}">Our Business</router-link></li>
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproduct'}">Our Product</router-link></li>
-          <!-- <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproductdetail'}">Our Product Detail</router-link></li> -->
-          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'newinsight'}">News & Insights</router-link></li>
+        <div class="modalNav" id="modalNav" @click="hideModal">
+          <div class="modalOverlay"></div><div class="navContent">
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'home'}">Our Company</router-link></li>
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourbusiness'}">Products</router-link></li>
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproduct'}">SOURCING</router-link></li>
+          <!-- <li><router-link class="page-scroll" active-class="active" :to="{ name: 'ourproductdetail'}">SOURCING Detail</router-link></li> -->
+          <li><router-link class="page-scroll" active-class="active" :to="{ name: 'newinsight'}">NEWS</router-link></li>
           <li><router-link class="page-scroll" active-class="active" :to="{ name: 'contact'}">Contact Us</router-link></li>
           <!-- <li><router-link class="page-scroll" href="news.html">News</router-link></li> -->
         </div></div>
@@ -63,5 +64,10 @@ display: none;
   color: black !important;
   font-size: 12px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-wrapper {
+  margin: 0 40px 0 20px;
+  width: 95%;
+  max-width: initial;
 }
 </style>

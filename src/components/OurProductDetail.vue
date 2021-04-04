@@ -26,12 +26,7 @@ export default {
   name: 'ourproductdetail'
 }
 </script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/materialize.min.js"></script>
-<script type="text/javascript" src="assets/js/parallax.js"></script>
-<script src="assets/js/init.js"></script>
-<script type="text/javascript"></script>
+
 
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>

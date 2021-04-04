@@ -4,8 +4,8 @@ import App from './App.vue'
 import router from "@/router";
 import navigation from "@/components/Navigation.vue";
 import ImgLogo from "@/components/ImgLogo.vue";
-import Root from "@/components/Root";
-Vue.component("root", Root)
+import HeaderFile from "@/components/HeaderFile";
+Vue.component("HeaderFile", HeaderFile)
 window.$ = window.jQuery = require("jquery");
 
 Vue.component("navigation", navigation);

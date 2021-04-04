@@ -1,50 +1,40 @@
 <template>
   <div>
-    <div id="alphaLeft" class="wow fadeInDown" data-wow-delay="1.4s">
-      <ul id="scene5" class="scene5" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-        <li class="layer" data-depth="0.4" style="transform: translate3d(-59.2852px, 25.786px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-          <svg width="1500px" height="1500px">
-            <polygon points="0,0 662,1194 365,260" style="stroke:none;fill:rgba(0,0,0,.2)"></polygon>
-            <polygon points="379,250 727,1340 1494,0 726,845" style="stroke:none;fill:rgba(0,0,0,.3)"></polygon>
-            <polygon points="819,719 1406,72 1081,263" style="stroke:none;fill:rgba(0,0,0,.2)"></polygon>
-          </svg>
-        </li>
-      </ul>
-    </div>
-    <header id="home">
-      <div class="headerMask"></div>
-      <div class="container containerHeader">
-        <div class="row">
-          <div class="col s12 l8 offset-l2 center-align">
-            <div id="headerContent">
-                <div id="logoContainer">
-                  <ImgLogo></ImgLogo>
-                </div>
-                <!-- <h2>International energy trading arm of the ELEMENT Group.<br>Actively trading liquid energy like crude oil, refined oil products, and LNG as well as dry-bulk energy commodities</h2> -->
-                <h2>We connect our suppliers and customers in value-adding partnerships for higher qualitya and greener products</h2>
-            </div>
-          </div>
+    <HeaderFile>
+      <img src="@/assets/img/News/166342240_10219072225737383_2030449683320385649_n.jpeg" alt="img">
+      <template #headerContent><h4 class="img-text-header">FOR SUSTAINABLE LIVING</h4></template>
+    </HeaderFile>
+    <section>
+        <div class="row" style="justify-content: center;">
+          <h4>VIET HAUS - YOUR ORGANIC HUB IN VIETNAM </h4>
         </div>
-      </div>
-      <div class="split firstSplit">
-        <img src="@/assets/img/split-bottom.png" alt="deco banner" class="splitBottom">
-      </div>
-    </header>
-    <section id="ourBusiness">
+    </section>
+
+    <section id="ourPurpose">
       <div class="container">
         <div class="row">
-          <div class="col s12 l12">
-            <h4 class="center-align">VIET HAUS WAS SELECTED TO JOIN THE  LIGHT HOUSE PROJECT</h4>
-            <hr class="hrTitle">
-            <p class="center-align center-block">We are happy to inform that Viet Haus was selected to join the Light House Project, organized by The Friedrich Naumann Foundation for Freedom (FNF). The workshop is on EVFTA with FNF Country Director and Eurocham Director and consulting on the approach to EU market.
-            </p>
-            <br>
-            <img src="@/assets/img/img-news.png">
+          <div class="col">
+            <img src="@/assets/img/News/z2387897154528_f2a3bba0007e16f7a3da8173eec6d621.jpg" alt="ORGANIC HUB">
+          </div>
+          <div class="col" style="text-align: left;">
+            <p class="home-title" style="color: #000">INSTRUCTIONS FOR ETHNIC FARMERS OF ORGANIC CASHEW </p>
+            <small>19 Mar, 2021</small>
+            <p>The training session was performed by our local partner at the commune center about the production procedure and requirements as per EU and USDA standards. Most of the attendants are ethnic community who grow up and live by farming on hills, mountains and fields.</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="ourPurpose">
+      <div class="container">
         <div class="row">
-          <div class="col s12 l12">
-            <router-link class="linkBtn" :to="{path: 'our-business'}">Read More</router-link>
+          <div class="col">
+            <img src="@/assets/img/News/51bd31488d1b7c45250a.jpg" alt="ORGANIC HUB">
+          </div>
+          <div class="col" style="text-align: left;">
+            <p class="home-title" style="color: #000">VIET HAUS WAS SELECTED TO JOIN LIGHT HOUSE PROJECT</p>
+            <small>27 Nov, 2020</small>
+            <p>So grateful that Viet Haus was selected to join Light House Project, organized by The Friedrich Naumann Foundation for Freedom (FNF).
+The workshop is on EVFTA with FNF Country Director and Eurocham Director and consulting on the approach to EU market.</p>
           </div>
         </div>
       </div>
@@ -56,12 +46,7 @@ export default {
   name: 'newinsight'
 }
 </script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/materialize.min.js"></script>
-<script type="text/javascript" src="assets/js/parallax.js"></script>
-<script src="assets/js/init.js"></script>
-<script type="text/javascript"></script>
+
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
 <style scoped>
