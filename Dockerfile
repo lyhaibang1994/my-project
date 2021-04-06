@@ -2,8 +2,6 @@
 # https://hub.docker.com/_/node
 FROM node:12-alpine
 
-ENV PORT=8080
-
 # Install npm and node
 RUN apk add --update npm
 
