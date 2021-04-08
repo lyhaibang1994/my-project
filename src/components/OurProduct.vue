@@ -8,7 +8,7 @@
       <div class="container">
         <div class="row">
           <div class="col s12 l12">
-            <p class="activity-text" style="text-align: left;">Viet Haus cooperates with an extensive team of experts and agronomists who work directly with farmers and processors to initiate and support conversion projects, provide from seedlings to technical instructions and continuously ensure the quality and organic integrity of our products. This local presence has enabled us to build sourcing projects that provide us with a steady and secure supply of a wide range of organic ingredients. To find out more, please read about some of these projects below:</p>
+            <p class="activity-text" style="text-align: justify;">Viet Haus cooperates with an extensive team of experts and agronomists who work directly with farmers and processors to initiate and support conversion projects, provide from seedlings to technical instructions and continuously ensure the quality and organic integrity of our products. This local presence has enabled us to build sourcing projects that provide us with a steady and secure supply of a wide range of organic ingredients. To find out more, please read about some of these projects below:</p>
           </div>
         </div>
         <div class="row">

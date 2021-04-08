@@ -1,7 +1,7 @@
 <template>
 <div>
   <HeaderFile>
-    <img src="@/assets/img/Our-company/our-com.jpg" alt="img"> 
+    <img src="@/assets/img/Our-company/sapa.webp" alt="img"> 
   </HeaderFile>
     <section id="ourBusiness">
       <div class="container">
@@ -21,10 +21,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="@/assets/img/Our-company/organic-bean.webp" alt="ORGANIC HUB">
+            <img src="@/assets/img/Our-company/Screen Shot 2021-04-08 at 09.24.21.png" alt="ORGANIC HUB">
           </div>
           <div class="col col-text">
-            <span class="home-title">VIET HAUS - ORGANIC HUB VIETNAM</span>
+            <span class="home-title">VIET HAUS - ORGANIC HUB</span>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
           </div>
           <div class="col col-text">
             <span class="home-title">OUR STORY</span>
-            <p>Viet Haus is the hub in Vietnam for organic ingredients. We offer a full service porfolio based on our efficient sourcing, sustainability approach and processing & distribution capabilities.</p>
+            <p>We understand the difficulty of clients to source organic products in Vietnam in large scale and insecurity of farmers in Vietnam for a sustainable agriculture and better life. Viet Haus was born to play a role as a hub in Vietnam stand for organic & sustainable. We offer a full service porfolio based on our efficient sourcing, sustainability approach, processing & distribution capabilities.</p>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="col col-text">
             <span class="home-title">OUR STORY</span>
-            <p>Viet Haus is the hub in Vietnam for organic ingredients. We offer a full service porfolio based on our efficient sourcing, sustainability approach and processing & distribution capabilities.</p>
+            <p>Our deep network of suppliers, processors and partners makes us a good choice partner for you in the organic food. We link organic farmers in Vietnam to the world, become a  trusted partner and enable them to improve their quality of life.</p>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="@/assets/img/Our-company/ORGANIC.jpeg" alt="STORY">
+            <img src="@/assets/img/Our-company/SONZ7122.jpg" alt="STORY">
           </div>
           <div class="col col-text">
             <span class="home-title">OUR SPECIALITIES</span>
