@@ -1,31 +1,23 @@
-# Use the official lightweight Node.js 12 image.
-# https://hub.docker.com/_/node
-FROM node:12-alpine
+FROM nginx:alpine
 
-ENV PORT=8080
+# Install npm and node
+RUN apk add --update npm
 
-# Create and change to the app directory.
+# Add bash
+RUN apk add --no-cache bash
+
 WORKDIR /app
 
-RUN set -ex && \
-    adduser node root && \
-    chmod g+w /app && \
-    apk add --update --no-cache \
-      g++ make python \
-      openjdk8-jre
+COPY package.json ./
 
-# Copy application dependency manifests to the container image.
-# A wildcard is used to ensure both package.json AND package-lock.json are copied.
-# Copying this separately prevents re-running npm install on every code change.
-COPY package*.json ./
+RUN npm install
 
-# Install production dependencies.
-RUN npm ci
+COPY . .
 
-# Copy local code to the container image.
-COPY . ./
+# # Make our shell script executable
+RUN chmod +x start.sh
 
-RUN npm run build
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
-# Run the web service on container startup.
-CMD [ "npm", "run", "start" ]
+
+CMD ["/bin/bash", "-c", "/app/start.sh && nginx -g 'daemon off;'"]
