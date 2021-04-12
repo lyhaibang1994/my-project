@@ -43,6 +43,11 @@ const router = new VueRouter({
           name: "ourproductdetail"
         },
         {
+          path: "/our-sourcing-detail",
+          component: () => import("./components/OurSourcingDetail.vue"),
+          name: "oursourcingdetail"
+        },
+        {
           path: "/new-insight",
           component: () => import("./components/NewInsight.vue"),
           name: "newinsight"

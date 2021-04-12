@@ -736,3 +736,15 @@ header > img {
 p {
     text-align: justify;
 }
+.center {
+    text-align: center;
+    justify-content: center;
+}
+#certificate {
+    width: 50%;
+}
+#certificate .row .col img{
+    height: 100px;
+    max-width: 100px;
+    margin-right: 1.3rem;
+}

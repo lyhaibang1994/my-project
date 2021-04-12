@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderFile>
-      <img src="@/assets/img/Sourcing/20ac438580fa72a42beb-removebg-preview.png" alt="img">
+      <img src="@/assets/img/Sourcing/Screen Shot 2021-04-08 at 10.39.19.png" alt="img">
       <template #headerContent><h4 class="img-text-header">OUR ORGANIC SOURCING PROJECTS</h4></template>
     </HeaderFile>
     <section>
@@ -18,7 +18,7 @@
           <h4>SOURCING PROJECTS</h4>
         </div>
 
-        <div class="row">
+        <div class="row content-sourcing">
           <div class="col">
             <div class="image">
               <img src="@/assets/img/Sourcing/z2399037076223_2cdb61083196cb2a7838786913bebc45.jpg" alt="nuts">
@@ -26,7 +26,7 @@
             <div class="content">
               <p class="home-title">Ninh Thuan - Organic Cashew Nuts</p>
               <p>Viet Haus cooperates with an organic cashew cooperative in Ninh Thuan with ethnic farmers in the area. Cashew is planted along the...</p>
-              <a href="#" style="color: #548235; text-decoration: underline;">Read more</a>
+              <a href="javascript:;" style="color: #548235; text-decoration: underline;" @click="$router.push({name: 'oursourcingdetail', query: {id: 'NinhThuan'}})">Read more</a>
             </div>
           </div>
           <div class="col">
@@ -35,8 +35,8 @@
             </div>
             <div class="content">
              <p class="home-title">Daknong - Organic Chili</p>
-              <p>Our local farm partner took years of trial for organic chili and successfully achieve organic standards of EU and USDA, plan...</p>
-              <a href="#" style="color: #548235; text-decoration: underline;">Read more</a>
+              <p>Our local farm partner took years of trial for organic chili and successfully achieve organic standards of EU and USDA, ...</p>
+              <a href="javascript:;" style="color: #548235; text-decoration: underline;" @click="$router.push({name: 'oursourcingdetail', query: {id: 'DakNong'}})">Read more</a>
             </div>
           </div>
         </div>
@@ -104,9 +104,23 @@ header h2 {
   width: 80%;
   height: 30%;
 }
-@media (max-width: 960px) {
+@media (max-width: 1350px) {
   .row > .col {
       flex: 1 0 100% !important;
+      margin-bottom: 40px;
   }
+}
+@media (max-width: 960px) {
+  .row > .col {
+      margin-bottom: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .row > .col {
+      margin-bottom: 10rem;
+  }
+}
+.content-sourcing {
+  margin-bottom: 50px;
 }
 </style>

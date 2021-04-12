@@ -1,21 +1,23 @@
 <template>
   <div>
     <HeaderFile>
-      <img src="@/assets/img/Products/_116597695_gettyimages-943001868.jpeg" alt="img">
-      <template #headerContent><h4 class="img-text-header">OUR PORFOLIO</h4></template>
+      <img src="@/assets/img/Products/Screen Shot 2021-04-08 at 10.12.24.png" alt="img">
+      <template #headerContent><h4 class="img-text-header">OUR PORTFOLIO</h4></template>
     </HeaderFile>
-    
+    <section>
+    </section>
+    <div class="row center"><h4>100% ORGANIC INGREDIENTS</h4></div>
     <section>
       <div class="row">
-        <div class="col">
+        <div class="col" @click="$router.push({name: 'ourproductdetail', query: {id: 'Nuts'}})">
           <div class="image">
-            <img src="@/assets/img/Products/depositphotos_233860678-stock-photo-flat-lay-composition-organic-nuts.jpeg" alt="nuts">
+            <img src="@/assets/img/Products/in-article-cashew-future.jpeg" alt="nuts">
           </div>
           <div class="content">
             <p>NUTS</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col" @click="$router.push({name: 'ourproductdetail', query: {id: 'SPICES'}})">
          <div class="image">
             <img src="@/assets/img/Products/824x465-155.png" alt="SPICES">
           </div>
@@ -26,9 +28,9 @@
       </div>
 
       <div class="row">
-        <div class="col">
+        <div class="col" @click="$router.push({name: 'ourproductdetail', query: {id: 'FRUITS'}})">
           <div class="image">
-            <img src="@/assets/img/Products/hvir9d3axgdsx5ircsdo.jpeg" alt="nuts">
+            <img src="@/assets/img/Products/Picture1.png" alt="nuts">
           </div>
           <div class="content">
             <p>FRUITS</p>
@@ -45,17 +47,17 @@
       </div>
 
       <div class="row">
-        <div class="col">
+        <div class="col" @click="$router.push({name: 'ourproductdetail', query: {id: 'FLOURS'}})">
           <div class="image">
             <img src="@/assets/img/Products/unnamed.jpeg" alt="nuts">
           </div>
           <div class="content">
-            <p>TAPIOCA</p>
+            <p>FLOURS & STARCHES</p>
           </div>
         </div>
         <div class="col">
          <div class="image">
-            <img src="@/assets/img/Products/147912919-coffee-background-organic-coffee-beans.jpeg" alt="SPICES">
+            <img src="@/assets/img/Products/Ue0f9975931fb4dcc810c048f4ffda0788.jpeg" alt="SPICES">
           </div>
           <div class="content">
             <p>COFFEE</p>
@@ -98,8 +100,14 @@ min-width: 0px !important;
 }
 .col .content {
   margin: auto;
+  font-weight: bold;
   width: 80%;
   height: 20%;
+  cursor: pointer;
+}
+.col .content p {
+  text-align: center !important;
+  font-size: 1.5rem;
 }
 @media (max-width: 960px) {
   .row > .col {

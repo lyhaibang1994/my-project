@@ -1,8 +1,12 @@
 <template>
   <div>
   <HeaderFile>
-    <img src="@/assets/img/Contact-us/78332411_10220245150816489_4305958233274580992_o.jpg" alt="img"> 
+    <img src="@/assets/img/Contact-us/Screen Shot 2021-04-08 at 09.31.04.png" alt="img"> 
   </HeaderFile>
+  
+    <section>
+    </section>
+    <div class="row center"><h4>CONTACT US</h4></div>
 
     <section id="ourPurpose">
       <div class="container">
@@ -14,14 +18,14 @@
             <p class="home-title" style="color: #000">General & Commercial Inquiries</p>
             <p>Ngan Nguyen (Ms) - Commercial Manager
                 <br>
-                <p>P:<a href="tel:+84 28 6273 9408"> (+84) 28 6273 9408</a></p>
+                <p>T:<a href="tel:+84 28 6273 9408"> (+84) 28 6273 9408</a></p>
                 <p>E: <a href="mailto:ngan@viet-haus.com">ngan@viet-haus.com</a></p>
           </div>
         </div>
       </div>
     </section>
     
-    <section id="ourPurpose">
+    <!-- <section id="ourPurpose">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -40,7 +44,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </div>
 </template>

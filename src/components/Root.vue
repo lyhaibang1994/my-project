@@ -13,7 +13,7 @@
             <h5>Contact Us</h5>
             <hr class="hr-contact">
             <address>
-              <p>Viet Haus Ltd.<br>A5.08 Sky Center<br>5B Pho Quang, Ward 2<br>Tan Binh District, HCMC, Vietnam.</p>
+              <p style="word-spacing: 10px;">Viet Haus Ltd.<br>A5.08 Sky Center, 5B Pho <br>Quang, Ward 2, Tan Binh <br>District, HCMC, Vietnam.</p>
               <a href="tel:+84 28 6273 9408">(+84) 28 6273 9408</a>
               <br>
               <a href="mailto:vh@viet-haus.com">
@@ -122,5 +122,8 @@ address {
   display: block;
   width: 60%;
   margin-bottom: 7px;
+}
+address {
+  font-weight: 800;
 }
 </style>
