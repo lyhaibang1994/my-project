@@ -6,7 +6,7 @@
     </HeaderFile>
     <section>
     </section>
-    <div class="row center"><h4>100% ORGANIC INGREDIENTS</h4></div>
+    <div class="row center"><h4>100% ORGANIC & ECOLOGICAL PRODUCTS</h4></div>
     <section>
       <div class="row">
         <div class="col" @click="$router.push({name: 'ourproductdetail', query: {id: 'Nuts'}})">

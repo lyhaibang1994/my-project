@@ -5,10 +5,8 @@
   </HeaderFile>
     <section id="ourBusiness">
       <div class="container">
-        <div class="row">
-          <div class="col s12 l12">
-            <p class="activity-text">Viet Haus is the hub in Vietnam for organic ingredients. We offer a full service porfolio based on our efficient sourcing, sustainability approach and processing & distribution capabilities.</p>
-          </div>
+        <div>
+          <div class="activity-text">Viet Haus is the hub in Vietnam for bio, organic and ecological products. We offer a full service portfolio based on our efficient sourcing, sustainability approach and processing & distribution capabilities.</div>
         </div>
         <!-- <div class="row">
           <div class="col s12 l12">
@@ -51,7 +49,7 @@
             <img src="@/assets/img/Our-company/z2387897128529_3b8d9634fcf405de97d0c2bd4239f10c.jpg" alt="STORY">
           </div>
           <div class="col col-text">
-            <span class="home-title">OUR STORY</span>
+            <span class="home-title">OUR NETWORK</span>
             <p>Our deep network of suppliers, processors and partners makes us a good choice partner for you in the organic food. We link organic farmers in Vietnam to the world, become a  trusted partner and enable them to improve their quality of life.</p>
           </div>
         </div>
@@ -82,3 +80,11 @@ export default {
 
 <style src="@/assets/css/materialize.min.css" scoped></style>
 <style src="@/assets/css/style.css" scoped></style>
+<style scoped>
+.container {
+  width: 80% !important;
+}
+.col-text {
+    padding: 0 0 0 3rem !important;
+}
+</style>

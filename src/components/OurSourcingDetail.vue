@@ -5,11 +5,11 @@
       <template #headerContent><h4 class="img-text-header">{{item.header_im_title}}</h4></template>
     </HeaderFile>
 
-    <section></section>
-    <div class="row container">
-      <h4 style="color: #548235; text-transform: inherit;">{{ item.title }}</h4>
-    </div>
-
+    <section>
+      <div class="container">
+        <h4 class="row" style="color: #548235; text-transform: inherit;">{{ item.title }}</h4>
+      </div>
+    </section>
     <section id="ourPurpose">
       <div class="container">
         <div class="row">

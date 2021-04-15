@@ -11,6 +11,7 @@ body{
   margin-top: 60px;
   margin: -8px;
   overflow-x: hidden;
+  font-size: 120%;
 }
 .bodyBg{
     z-index: -1;
@@ -21,18 +22,6 @@ body{
     height: 100%;
     background-size: cover;
     background-position: center;
-}
-.bgContact{
-    background-image:url('../img/bgcontact.jpg');
-}
-.bgCareer{
-    background-image:url('../img/bgcarreer.jpg');
-}
-.bgBusiness{
-    background-image:url('../img/bgbusiness.jpg');
-}
-.bgAbout{
-    background-image:url('../img/bgabout.jpg');
 }
 .center-align span {
     text-transform: initial;
@@ -324,6 +313,7 @@ header{
     height: 80vh;
     min-height: 80vh;
     position: relative;
+    overflow: hidden;
 }
 header.smallheader{
     min-height: 50vh;
@@ -672,7 +662,7 @@ textarea.materialize-textarea{
 .activity-text {
     display: block;
     color: #35353d;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
     margin-left: auto;
@@ -720,10 +710,12 @@ header > img {
 }
 .img-text-header {
     color: #fff;
+    margin-top: 70px;
+    font-size: 3rem;
 }
 .home-title {
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #548235;
 }
@@ -747,4 +739,8 @@ p {
     height: 100px;
     max-width: 100px;
     margin-right: 1.3rem;
+}
+
+p, span {
+    font-size: 1.3rem;
 }

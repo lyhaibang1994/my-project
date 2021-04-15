@@ -7,9 +7,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col s12 l12">
-            <p class="activity-text" style="text-align: justify;">Viet Haus cooperates with an extensive team of experts and agronomists who work directly with farmers and processors to initiate and support conversion projects, provide from seedlings to technical instructions and continuously ensure the quality and organic integrity of our products. This local presence has enabled us to build sourcing projects that provide us with a steady and secure supply of a wide range of organic ingredients. To find out more, please read about some of these projects below:</p>
-          </div>
+            <span class="activity-text" style="text-align: justify;">Viet Haus cooperates with an extensive team of experts and agronomists who work directly with farmers and processors to initiate and support conversion projects, provide from seedlings to technical instructions and continuously ensure the quality and organic integrity of our products. This local presence has enabled us to build sourcing projects that provide us with a steady and secure supply of a wide range of organic ingredients. To find out more, please read about some of these projects below:</span>
         </div>
         <div class="row">
           <img src="@/assets/img/Sourcing/voaa-eng-3-2048x1448.jpeg" alt="atlat" style="width: 100%; height: 100%;">
@@ -88,20 +86,15 @@ header h2 {
   height: 80%;
   text-align: left;
 }
-.col {
-  padding: 0 4rem !important;
-  /* min-height: 300px; */
-}
 .col .image {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 100%;
   height: 70%;
 }
 .col .content {
   text-align: left;
   margin: auto;
-  width: 80%;
   height: 30%;
 }
 @media (max-width: 1350px) {
