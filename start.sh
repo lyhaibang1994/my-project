@@ -16,3 +16,4 @@ then
 
     echo "END COPY";
 fi
+

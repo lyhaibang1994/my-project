@@ -21,3 +21,4 @@ COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 
 CMD ["/bin/bash", "-c", "/app/start.sh && nginx -g 'daemon off;'"]
+
