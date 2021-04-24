@@ -89,6 +89,7 @@ min-width: 0px !important;
 }
 }
 .col {
+  cursor: pointer;
   padding: 0 4rem !important;
   /* min-height: 300px; */
 }

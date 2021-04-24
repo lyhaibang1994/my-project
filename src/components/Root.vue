@@ -13,7 +13,7 @@
             <h5>Contact Us</h5>
             <hr class="hr-contact">
             <address>
-              <p style="word-spacing: 10px;">Viet Haus Ltd.<br>A5.08 Sky Center, 5B Pho <br>Quang, Ward 2, Tan Binh <br>District, HCMC, Vietnam.</p>
+              <p>Viet Haus Ltd.<br>219 Hong Ha, Ward 9<br>Phu Nhuan District, Ho Chi Minh City<br>   Vietnam.</p>
               <a href="tel:+84 28 6273 9408">(+84) 28 6273 9408</a>
               <br>
               <a href="mailto:vh@viet-haus.com">
