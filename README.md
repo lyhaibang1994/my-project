@@ -1,24 +1,4 @@
-# my-project
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Cloud Build to build our docker image
+gcloud builds submit --tag gcr.io/western-emitter-306610/viethaus
+## Deploy our new revision to Cloud Run
+gcloud run deploy --image gcr.io/western-emitter-306610/viethaus --platform manage
