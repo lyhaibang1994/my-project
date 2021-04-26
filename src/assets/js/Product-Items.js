@@ -10,7 +10,7 @@ export default [
             {                
                 "img": "assets/img/Products/Nuts/U6414ac0c801a461dafc8d3b9d97cff531.jpeg",
                 "header": "ORGANIC CASHEW NUTS",
-                "content": "Viet Haus supplies organic cashes from our local cooperatives. We have developed the material area of organic standards according to the criteria of Organic USDA and EU, Fair Trade FLO from seedlings, cultivation to harvesting and processing with private labels. We can offer several sizes of organic cashews from raw nuts till processed nuts like salted cashew, unpeeled cashew...<br>Further processing and packaging options:<br>- Processing into semi-finished products (cut, ground, roasted)<br>- Roasting with or without salt/spice mixtures<br>- In bulk or retail packaging"
+                "content": "Viet Haus supplies organic cashew from our local cooperatives. We have developed the material area of organic standards according to the criteria of Organic USDA and EU, Fair Trade FLO from seedlings, cultivation to harvesting and processing with private labels. We can offer several sizes of organic cashews from raw nuts till processed nuts like salted cashew, unpeeled cashew...<br>Further processing and packaging options:<br>- Processing into semi-finished products (cut, ground, roasted)<br>- Roasting with or without salt/spice mixtures<br>- In bulk or retail packaging"
             }
         ]
     },
@@ -25,7 +25,7 @@ export default [
             {                
                 "img": "assets/img/Products/Spices/Pepper5.jpg",
                 "header": "ORGANIC PEPPER",
-                "content": "Our local farm partners took years for organic conversion and follow strictly organic standards of EU, USDA and JAS. <br>We offer whole, cracked and ground pepper with several types:<br>- Black Pepper<br>- Red Pepper<br>- White Pepper<br>- Pepper Oil<br><br>YOUR PACKING - YOUR BRANND"
+                "content": "Our local farm partners took years for organic conversion and follow strictly organic standards of EU, USDA and JAS. <br>We offer whole, cracked and ground pepper with several types:<br>- Black Pepper<br>- Red Pepper<br>- White Pepper<br>- Pepper Oil<br><br>YOUR PACKING - YOUR BRAND"
             },
             {                
                 "img": "assets/img/Products/Spices/Organic Chilli - Fresh.png",
