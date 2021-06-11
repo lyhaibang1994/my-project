@@ -3,7 +3,7 @@
     <nav role="navigation" id="navigation" class="nav-header">
       <div class="nav-wrapper container">
         <router-link class="page-scroll" :to="{ name: 'home'}">
-          <img class="logoNav" src="@/assets/img/viethaus_transparent.png" alt="Logo ELEMENT Americas">
+          <img class="logoNav" src="@/assets/img/viethaus_logo.png" alt="Logo ELEMENT Americas">
           <!-- <img class="logoNav" src="@/assets/img/pg-name.png" alt="Logo Name"> -->
           <!-- <div class="slogan-header">Poin to the Quintessence</div> -->
         </router-link>

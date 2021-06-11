@@ -1,6 +1,6 @@
 <template>
   <div id="logoContainer">
-    <img src="@/assets/img/viethaus_transparent.png" :width="width" alt="Logo ELEMENT Group" />
+    <img src="@/assets/img/viethaus_logo.png" :width="width" alt="Logo ELEMENT Group" />
     <!-- <img src="@/assets/img/pg-name.png" class="logo-name" alt="Logo ELEMENT" />
     <div class="slogan-header">Poin to the Quintessence</div> -->
   </div>
