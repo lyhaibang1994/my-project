@@ -5,11 +5,15 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: "hash",
+  mode: "history",
+  hash: false,
   scrollBehavior() {
     return { x: 0, y: 0 };
   },
   routes: [
+    { path: '*', 
+      redirect: '/' 
+    }, // catch all use case
     {
       path: "/",
       redirect: { name: "home" }
