@@ -28,12 +28,12 @@ const router = new VueRouter({
           }
         },
         {
-          path: "/our-business",
+          path: "/product",
           component: () => import("./components/OurBusiness.vue"),
           name: "ourbusiness"
         },
         {
-          path: "/our-product",
+          path: "/sourcing",
           component: () => import("./components/OurProduct.vue"),
           name: "ourproduct"
         },
@@ -48,7 +48,7 @@ const router = new VueRouter({
           name: "oursourcingdetail"
         },
         {
-          path: "/new-insight",
+          path: "/news",
           component: () => import("./components/NewInsight.vue"),
           name: "newinsight"
         },
